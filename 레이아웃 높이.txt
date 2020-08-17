@@ -1,0 +1,142 @@
+[레이아웃 높이]
+0. 상단영역 -145
+1. 배너영역 -800
+2. 상품영역1 -800
+3. 서브배너 - 730
+4. 상품영역2 - 626
+5. 영상영역 - 887 ->845
+6. sns영역 - 565 -> 575
+7. 푸터 - 320
+
+*
+gnb 드롭다운메뉴 디자인하기
+
+
+큰레이아웃 잡기 **************
+폰트변환 cdn,방식 직접 woff,ttf변환방식
+
+
+PC******************************
+GNB
+[1.BRAND]
+1)Brand Story
+2)Beautiful Moments
+3)Special
+4)AD CAMPAIGN
+
+[2.COLLECTION]
+1)collection info
+2)SHe
+3)silhouette
+4)honeymoon
+5)silver tale
+6)watch
+
+[3.ITEM]
+1)all
+2)new
+3)best
+4)propose
+5)Necklace
+6)Earrings
+7)Couple Ring
+8)Ring
+9)Bracelet
+10)Anklet
+11)Watch
+
+
+[4.ISSUE]
+1)STYLE
+2)GALLERY
+3)NEWS
+
+
+5.STORE
+매장찾기
+
+
+------------------------------------------------------------
+https://jsfiddle.net/2f6k7jay/
+https://codepen.io/CoMeangKim/pen/WNwbORO
+https://jsfiddle.net/9q8juhvb/2/
+트렌지션 불투명배경****************************
+
+[html]
+이미지삽입
+ul
+li
+a
+h4(small)
+img
+
+
+
+[css]
+img 100% db
+a por db oh
+
+small db
+h4 poa 위치,트렌지션
+a:before
+content,poa 좌,우,위,밑 0 ,배경색0,트렌지션 0.3s
+
+트렌지션
+a:hover h4(위치)
+a:hover:before:배경색 불투명
+
+=>플렉스 남발하지말고
+flex는 ul li정렬할때만 사용
+글자정렬은
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+이런걸로해라
+
+
+-그리고 ul li에 div쓰지말어라
+
+
+----------------------------------------------------------
+유튜브...이미지 클릭하면 유튜브 나오는거...제이쿼리..ㅜㅜ
+
+이사배 제이쿼리
+https://jsfiddle.net/onigetoc/81tztuk1/
+
+인스타가저오기
+구글링
+
+슬라이더
+구글링
+------------------------------------------------------------
+포트폴리오사이트
+(브런치에서 주움-브랜딩)
+1.https://greenray.kr/Portfolio
+
+읽어보면 좋은글
+https://brunch.co.kr/@dalgudot/121
+
+----------------------------------------------------------
+슬라이더
+http://kenwheeler.github.io/slick/
+
+css애니메이션
+https://freefrontend.com/css-hamburger-menu-icons/
+
+
+------------------------------------------------------------
+1.슬라이드
+캐러셀 슬라이더 오버레이방식
+https://devdesigner.tistory.com/4
+원본과 가까움(코딩레스토랑)
+https://coding-restaurant.tistory.com/59
+
+2.상품영역 하나씩넘어가게
+
+3.sns영역
+
+
+스크롤 헤더 
+https://jsfiddle.net/19bwe33x/12/
+

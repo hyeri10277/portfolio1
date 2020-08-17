@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* common.css - 공통 레이아웃 디자인 */
+
+/*퀵메뉴*/
+.quick_top a {
+    font-family: nb;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #6BBAC9;
+    color: #fff;
+    z-index: 9999999;
+}
+
+
+
+/*상단영역*/
+#top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*부모자격*/
+    height: 145px;
+    background-color: #fff;
+    z-index: 999999;
+}
+
+header#top:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #6BBAC9;
+}
+
+
+
+/*스크롤시 탑불투명*/
+.top.on {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*로고*/
+#logo {
+    width: 100px;
+    height: 71px;
+    /*outline: 1px solid red;*/
+    margin: 0 auto;
+    padding: 25px 0 20px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+/*GNB메뉴*/
+.gnb {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.gnb > ul {
+    display: flex;
+}
+
+.gnb > ul > li {
+    width: 190px;
+    text-align: center;
+    font: 15px/28px nb;
+    /*스두크줄체*/
+}
+
+.gnb > ul > li > a {
+    color: #767676;
+}
+
+/*영어메뉴체만 설정*/
+.gnb > ul > li > a > span:first-child {
+    font-family: notor;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+/*처음에 영어메뉴만 보이기*/
+.gnb > ul > li > a > span:last-child {
+    display: none;
+    color: #6BBAC9;
+}
+
+/*마우스오버시 한글메뉴로 변경!*/
+
+.gnb > ul > li:hover > a > span:first-child {
+    display: none;
+}
+
+.gnb > ul > li:hover > a > span:last-child {
+    display: inline;
+}
+
+
+
+/*gnb*/
+
+.gnb .submenu {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    /*300px;*/
+    background-color: #ebebeb;
+    text-align: left;
+    /* display: none;*/
+    overflow: hidden;
+    transition: height .4s ease-out;
+}
+
+/* 높이0이었다가 마우스호버시 300으로 늘어나게*/
+.gnb .submenu ul {
+    padding: 30px 0 0 50px;
+}
+
+/*상위메뉴 마우스 오버시 하위메뉴 보이기*/
+.gnb > ul > li:hover .submenu {
+    height: 300px;
+}
+
+
+.sb1 {
+    background: url(../images/menu5_200519_01.jpg) no-repeat 600px 30px/auto 220px;
+}
+
+/*gnb 100% 배경박스*/
+.gnbbg {
+    position: absolute;
+    top: 145px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #ebebeb;
+    z-index: 2;
+    transition: height .4s ease-out;
+}
+
+
+/*gnb 100% 배경박스 오버시*/
+.gnbbg.on {
+    height: 300px;
+}
+
+/*gnb클릭시 배경 검정*/
+.bgb {
+    width: 100%;
+    height: 100%;
+    background: #0000003b;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+.bgb.on {
+    display: block;
+}
+
+
+/*링크메뉴*/
+.lmenu {
+    display: flex;
+    position: absolute;
+    right: 295px;
+    top: 23px;
+
+}
+
+.lmenu > li {
+    padding: 0 5px;
+}
+
+
+.lmenu a {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.icon_store {
+    background-image: url(../images/icon_store.png);
+}
+
+.icon_search {
+    background-image: url(../images/icon_search.png);
+}
+
+.icon_login {
+    background-image: url(../images/icon_login.png);
+}
+
+
+.hide {
+    /*클래스를 만들고 숨기기코드 셋팅!*/
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+/*하단영역*/
+.info {
+    background-color: #6BBAC9;
+    display: flex;
+}
+
+#info {
+    height: 320px;
+    text-align: center;
+    color: #fff;
+    font-family: nb;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 86px 0 30px;
+}
+
+.sns li {
+    padding: 0 24px;
+}
+
+.footer_navi {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_navi a {
+    color: #fff;
+}
+
+
+.footer_navi span {
+    padding: 0 6px;
+}
+
+address {
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 27px;
+    display: inline-block;
+}
+
+address span {
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 13px;
+}

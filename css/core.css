@@ -62,7 +62,7 @@ body {
     width: 1440px;
     max-width: 100%;
     margin: 0 auto;
-    outline: 1px dashed red;
+   /* outline: 1px dashed red;*/
 }
 
 /*IR(Image Replacement) class*/

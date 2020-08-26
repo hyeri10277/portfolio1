@@ -685,6 +685,18 @@
     font-size: 15px;
 }
 
+.lightwidget-widget{
+    padding-top: 30px;
+    width:1045px;
+    height:auto;
+    margin:0 auto;
+    display:block;
+    border:0;
+    overflow: hidden;
+    
+}
+
+/*
 
 .main_sns {
     width: 1045px;
@@ -749,3 +761,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+*/
+
+
+

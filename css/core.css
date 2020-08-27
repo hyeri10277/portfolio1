@@ -19,7 +19,7 @@
 @font-face {
     /*노토레귤러체*/
     font-family: notor;
-    src: url(../fonts/NotoSansCJKkr-Regular.woff) format("woff"), 
+    src: url(../fonts/NotoSansCJKkr-Regular.woff) format("woff"),
         url(../fonts/NotoSansCJKkr-Regular.ttf) format("truetype")
 }
 
@@ -53,6 +53,16 @@ body {
     color: #808080;
     line-height: 136%;
     font-size: 12px;
+
+}
+
+/* 폰트 늦게 뜨는거 빨리뜨게하기 */
+body:before {
+    content: '';
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+    font-family: 'notor';
 }
 
 /* 공통 class */
@@ -62,7 +72,7 @@ body {
     width: 1440px;
     max-width: 100%;
     margin: 0 auto;
-   /* outline: 1px dashed red;*/
+    /* outline: 1px dashed red;*/
 }
 
 /*IR(Image Replacement) class*/

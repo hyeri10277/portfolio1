@@ -49,7 +49,8 @@
 
 /*공통*/
 body {
-    font-family: dotum, "돋움", sans-serif;
+    /*font-family: dotum, "돋움", sans-serif;*/
+    font-family: notor;
     color: #808080;
     line-height: 136%;
     font-size: 12px;

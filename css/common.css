@@ -177,7 +177,7 @@ header#top:before {
 
 .submenu > ul > li> a:hover > span:last-child {
     display: inline;
-    border:1px solid #000;
+    /*border:1px solid #000;*/
 }
 
 

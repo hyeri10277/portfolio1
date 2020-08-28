@@ -812,12 +812,22 @@
     width: 50px;
     height: 81.5%;
     background-color: rgba(137, 200, 212, 0.25);
-    display: block;
+    display: none;
     /* outline: 1px solid #000;*/
     z-index: 10;
 }
 
-.sns_prev img,
+
+
+.sns_prev img{
+    /* background-color: #;*/
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .sns_next img {
     /* background-color: #;*/
     margin: 0 auto;
@@ -840,7 +850,10 @@
     z-index: 10;
 }
 
-.sns_next:hover,
+.sns_next:hover.sns_prev:hover {
+    background-color: rgba(137, 200, 212, 0.5);
+    transition: all .2s ease-in;
+}
 .sns_prev:hover {
     background-color: rgba(137, 200, 212, 0.5);
     transition: all .2s ease-in;

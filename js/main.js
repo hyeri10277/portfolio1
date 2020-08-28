@@ -449,14 +449,15 @@ $(function () { /// jQB ///////////////////
     }
 
 
-    /// SNS 버튼 클릭시
+      /// SNS 버튼 클릭시
     $(".sns_next").click(function (e) {
         e.preventDefault();//기본기능막기!
         console.log("하하");
         $("#instagram").animate({
             left: "-101.25%"
         }, 600);
-        
+       $(".sns_prev").css('display', 'block');  
+       $(this).css('display','none');
     }); //////// click ///////////////
 
     /// SNS 버튼 클릭시
@@ -465,11 +466,10 @@ $(function () { /// jQB ///////////////////
         console.log("호호");
         $("#instagram").animate({
             left: "0"
-        }, 600);
-        
+        }, 600);       
+       $(this).css('display','none'); 
+       $(".sns_next").css('display', 'block');  
     }); //////// click ///////////////
-
-
 
 
 }); /////////// jQB //////////////////////////

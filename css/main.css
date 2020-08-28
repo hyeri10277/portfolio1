@@ -689,40 +689,49 @@
 
 
 /*인스타그램 불러오기*/
-.instaBox{
+.instaBox {
     position: relative;
-    width: 1200px;
+    width: 1100px;
     outline: 1px solid red;
     margin: 0 auto;
-    padding-left: 14px;
+   /* padding-left: 14px;*/
     overflow: hidden;
 }
 
 #instagram {
-    position: relative;/*위치이동하기 위해!*/
+    position: relative;
+    /*위치이동하기 위해!*/
     left: 0;
     padding-top: 45px;
     overflow: hidden;
-    width: 200%;/*부모박스 두배크기*/
+    width: 203%;
+    /*부모박스 두배크기*/
     margin: 0 auto;
 }
 
 .instagram_item {
     float: left;
-    width: 12.5%;/*한줄에 8개오도록 %조정*/
+    width: 12.5%;
+    /*한줄에 8개오도록 %조정*/
     padding-right: 14px;
     padding-bottom: 14px;
+    box-sizing: border-box;
 }
 
 .instagram_item > a {
-    display: block;
     width: 100%;
+    display: block;
     padding-top: 100%;
     position: relative;
     background: no-repeat center center;
     background-size: cover;
-    border:1px solid #ebebeb;
+    border: 1px solid #ebebeb;
 }
+
+
+/*.instagram_item:nth-child(5n) {
+    padding-left:0px;
+}*/
 
 .instagram_item > a:before {
     content: '';
@@ -731,9 +740,9 @@
     right: 0;
     top: 0;
     bottom: 0;
-  /*  background: #000000;*/
-    background: rgba(255, 255, 255, 0.2);
-  /*  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);
+    /*  background: #000000;*/
+    background: rgba(255, 255, 255, 0.3);
+    /*  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);
     background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .8) 100%);
     z-index: 1;*/
@@ -742,6 +751,7 @@
     transition: opacity .55s cubic-bezier(.215, .61, .355, 1);
 }
 
+/* 지우면 undefined 나옴 */
 .instagram_item p {
 
     width: 100%;
@@ -769,45 +779,46 @@
 
 
 
-    
 
+/*
 .main_sns {
     width: 1045px;
-    background-color: ;
+    background-color: royalblue;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
     position: relative;
-   /* outline: 1px solid #;*/
-}
+    outline: 1px solid #000;
+}*/
 
 
-.main_sns li {
+/*.main_sns li {
     width: 250px;
     height: 250px;
     border: 1px solid #ebebeb;
-}
-
+}*/
+/*
 .main_sns li img {
     width: 100%;
-}
+}*/
 
-
+/* SNS버튼 */
 .sns_prev {
     position: absolute;
-    left: 14px;
+    left: 0;
     bottom: 14px;
     width: 50px;
-    height: 82.5%;
+    height: 81.5%;
     background-color: rgba(137, 200, 212, 0.25);
     display: block;
-    outline: 1px solid #000;
+    /* outline: 1px solid #000;*/
     z-index: 10;
 }
 
-.sns_prev img {
-    background-color: #;
+.sns_prev img,
+.sns_next img {
+    /* background-color: #;*/
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -818,22 +829,18 @@
 
 .sns_next {
     position: absolute;
-    right: 14px;
+    right: 0;
     bottom: 14px;
     width: 50px;
     height: 82.5%;
     background-color: rgba(137, 200, 212, 0.25);
     display: block;
-    outline: 1px solid #000;
+    /* outline: 1px solid #000;*/
     z-index: 10;
 }
 
-.sns_next img {
-/*    background-color: #fff;*/
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.sns_next:hover,
+.sns_prev:hover {
+    background-color: rgba(137, 200, 212, 0.5);
+    transition: all .2s ease-in;
 }
-

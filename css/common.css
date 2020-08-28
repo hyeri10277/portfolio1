@@ -87,6 +87,7 @@ header#top:before {
     width: 190px;
     text-align: center;
     font: 15px/28px nb;
+    cursor: pointer;
     /*스두크줄체*/
 }
 
@@ -128,12 +129,11 @@ header#top:before {
 .submenu > ul > li > a {
     color: #767676;
     letter-spacing: 1px;
-
+    display: block;
 }
 
 
 .submenu {
-
     position: absolute;
     left: 0;
     /*쌤수정*/
@@ -171,12 +171,13 @@ header#top:before {
 
 /*마우스오버시 한글메뉴로 변경!*/
 
-.submenu > ul > li:hover > a > span:first-child {
+.submenu > ul > li > a:hover > span:first-child {
     display: none;
 }
 
-.submenu > ul > li:hover > a > span:last-child {
+.submenu > ul > li> a:hover > span:last-child {
     display: inline;
+    border:1px solid #000;
 }
 
 

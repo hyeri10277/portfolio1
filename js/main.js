@@ -149,7 +149,7 @@ $(function () { /// jQB ///////////////////
 
 
     // 마지막 li 호버삭제됨
-    $(".gnb>ul>li:last").hover(
+    $(".gnb>ul>li>:last").hover(
         function () { // over
             $(".gnbbg").removeClass("on");
         }); ///// hover ///////  

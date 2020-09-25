@@ -132,7 +132,7 @@ $(function () { /// jQB ///////////////////
     /////////// GNB 메뉴에 마우스 오버시 GNB 배경박스 나타나기 //////
     // 필요없는 코드가 있는것 같음  gnbbg에 마우스 있을때도 머물게하기
     // 스크롤 내리면 top불투명흰색배경->안함
-    $(".gnb>ul>li").hover(
+    $(".gnb>ul>li:lt(4)").hover(
         function () { // over
             $(".gnbbg").addClass("on");
             /*   $(".bgb").addClass("on");*/
@@ -149,10 +149,10 @@ $(function () { /// jQB ///////////////////
 
 
     // 마지막 li 호버삭제됨
-    $(".gnb>ul>li>:last").hover(
-        function () { // over
-            $(".gnbbg").removeClass("on");
-        }); ///// hover ///////  
+//    $(".gnb>ul>li>:last").hover(
+//        function () { // over
+//            $(".gnbbg").removeClass("on");
+//        }); ///// hover ///////  
 
 
 
@@ -171,7 +171,7 @@ $(function () { /// jQB ///////////////////
 
         // 어두웠던 바탕화면을 해제한다(옵션)
         function () { // out
-            $(".bgb").stop().fadeOut(500);
+            $(".bgb").hide();
         }); ///// hover ///////
 
 
@@ -179,7 +179,7 @@ $(function () { /// jQB ///////////////////
 
 
     // gnb li호버시 submenu 서서히 나타남
-    $(".gnb>ul>li").hover(
+    $(".gnb>ul>li:lt(4)").hover(
         // 바탕화면을 어둡게 만든다(옵션) -자기혼자움직임
         function () { // over
             $(".submenu").stop().fadeIn(400);

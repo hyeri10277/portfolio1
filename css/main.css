@@ -814,7 +814,7 @@
     background-color: rgba(137, 200, 212, 0.25);
     display: none;
     /* outline: 1px solid #000;*/
-    z-index: 10;
+/*    z-index: 9;*/
 }
 
 
@@ -847,7 +847,7 @@
     background-color: rgba(137, 200, 212, 0.25);
     display: block;
     /* outline: 1px solid #000;*/
-    z-index: 10;
+/*    z-index: 9;*/
 }
 
 .sns_next:hover.sns_prev:hover {

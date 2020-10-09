@@ -31,7 +31,7 @@
     /*부모자격*/
     height: 150px;
     background-color: #fff;
-    z-index: 9;
+    z-index: 10;
 }
 
 header#top:before {
